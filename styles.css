@@ -374,7 +374,7 @@ body {
 
     }
 
-    .servies h1 {
+    .services h1 {
         font-size: 2rem;
         margin-top: 12rem;
     }
@@ -392,6 +392,322 @@ body {
     .services__card {
         width: 300px;
     }
+}
+
+
+
+
+
+
+
+/*Spectroscope Lesson Code */
+
+.spectroscope {
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600vh;
+
+}
+
+.spectroscope h1 {
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b1a25b 100%);
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin: 35px;
+}
+
+.spectroscope-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.spectroscope-card {
+    margin: 1rem;
+    height: 525px;
+    width: 375px;
+    border-radius: 4px;
+    background: #141414;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.spectroscope-card:nth-child(2) {
+    background-image: url('./images/spec-1.png');
+    height: 525px;
+    width: 750px;
+}
+
+.spectroscope-card h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.spectroscope-card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.spectroscope-card:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .spectroscope {
+        height: 1600px;
+
+    }
+
+    .spectroscope h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .spectroscope {
+        height: 1400px;
+    }
+
+    .spectroscope h1 {
+        font-size: 1.2rem;
+    }
+
+    .spectroscope {
+        width: 300px;
+    }
+}
+
+
+.spectroscope-container-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.spectroscope-card-2 {
+    margin: 1rem;
+    height: 525px;
+    width: 375px;
+    border-radius: 4px;
+    background: #141414;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.spectroscope-card-2:nth-child(2) {
+    background-image: url('./images/spec-2.png');
+    height: 525px;
+    width: 750px;
+}
+
+.spectroscope-card-2 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.spectroscope-card-2 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.spectroscope-card-2:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.spectroscope-container-3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.spectroscope-card-3 {
+    margin: 1rem;
+    height: 525px;
+    width: 375px;
+    border-radius: 4px;
+    background: #141414;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.spectroscope-card-3:nth-child(2) {
+    background-image: url('./images/spec-3.png');
+    height: 525px;
+    width: 750px;
+}
+
+.spectroscope-card-3 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.spectroscope-card-3 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.spectroscope-card-3:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.spectroscope-container-4 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.spectroscope-card-4 {
+    margin: 1rem;
+    height: 525px;
+    width: 375px;
+    border-radius: 4px;
+    background: #141414;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.spectroscope-card-4:nth-child(2) {
+    background-image: url('./images/spec-4.png');
+    height: 525px;
+    width: 750px;
+}
+
+.spectroscope-card-4 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.spectroscope-card-4 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.spectroscope-card-4:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+.spectroscope-container-discussion {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.spectroscope-card-discussion {
+    margin: 1rem;
+    height: 525px;
+    width: 500px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/light.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.spectroscope-card-discussion:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/white.jpg');
+    color: black;
+}
+
+.spectroscope-card-discussion:nth-child(3) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/rainbow.jpg');
+    color: white;
+}
+
+.spectroscope-card-discussion:nth-child(4) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/spec-4.png');
+    color: white;
+}
+
+.spectroscope-card-discussion:nth-child(5) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/cd.jpg');
+    color: white;
+}
+
+.spectroscope-card-discussion h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.spectroscope-card-discussion p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.spectroscope-card-discussion:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.spectroscope-container-materials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.spectroscope-card-materials {
+    margin: 1rem;
+    height: 525px;
+    width: 375px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/materials.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.spectroscope-card-materials h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.spectroscope-card-materials p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.spectroscope-card-materials:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 /* Hero CSS 

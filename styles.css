@@ -29,8 +29,8 @@
 }
 
 #navbar__logo {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199, 100%);
+    background-color: #4bbbbd;
+    background-image: linear-gradient(to top, #FAAB36 0%, #FAAB36, 100%);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -42,10 +42,6 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
-}
-
-.fa-gem {
-    margin-right: 0.5rem;
 }
 
 .navbar__menu {
@@ -88,115 +84,18 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
+    background: #249EA0;
     color: #fff;
 }
 
 .button:hover {
-    background: #4837ff;
+    background: #005F60;
     transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-    color: #f77062;
+    color: #8acdce;
     transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 800px) {
-    .navbar__container {
-        display: flex;
-        justify-content: space-between;
-        height: 80px;
-        z-index: 1;
-        width: 100%;
-        max-width: 1300px;
-        padding: 0px;
-    }
-
-    .navbar__menu {
-        display: grid;
-        grid-template-columns: auto;
-        margin: 0;
-        width: 100%;
-        position: aboslute;
-        top: -1000px;
-        opacity: 0;
-        transition: all 0.5s ease;
-        height: 50vh;
-        z-index: -1;
-        
-    }
-
-    .navbar__menu.active {
-        background: #131313;
-        top: 100%;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 99;
-        height: 50vh;
-        font-size: 1.6rem;
-    }
-
-    #navbar__logo {
-        padding-left: 25px;
-    }
-
-    .navbar__toggle.bar {
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background: #fff;
-    }
-
-    .navbar__item {
-        width: 100%;
-    }
-
-    .navbar__links {
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
-    }
-
-    #mobile-menu {
-        position: absolute;
-        top: 20%;
-        right: 5%;
-        transform: translate(5%, 20%);
-    }
-
-    .navbar__btn {
-        padding-bottom: 2rem;
-    }
-
-    .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 80px;
-        margin: 0;
-    }
-
-    .navbar__toggle .bar {
-        display: block;
-        cursor: pointer;
-    }
-
-    #mobile-menu.is-active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    #mobile-menu.is-active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    #mobile-menu.is-active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
 }
 
 /* Hero css */
@@ -220,35 +119,36 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #131313;
+    background: url(./images/girl-laptop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     filter: brightness(60%);
  }
- .hero-content {
+ .hero__content {
     position: relative;
     font-family: "Monserrat", sans-serif;
-    color: white;
+    color: black;
     text-align: center;
     margin: 0.625rem;
  }
- .hero-title {
+ .hero__title {
     font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-image: linear-gradient(to top, #a49da8 0%, #fff 100%);
     background-size: 100%;
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     font-weight: 600;
  }
- .hero-subtitle {
+ .hero__subtitle {
     font-size: 2rem;
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-image: linear-gradient(to top, #a49da8 0%, #fff 100%);
     background-size: 100%;
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -257,7 +157,7 @@ body {
 
  .main__btn {
     font-size: 1rem;
-    background-color: pink;
+    background-color: #249ea0;
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -271,7 +171,7 @@ body {
 .main__btn a {
     position: relative;
     z-index: 2;
-    color: #131313;
+    color: black;
     text-decoration: none;
 }
 
@@ -282,7 +182,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: #4837ff;
+    background: #005F60;
     transition: all 0.3s;
     border-radius: 4px;
 }
@@ -291,9 +191,8 @@ body {
     width: 100%;
 }
 
-/* Services Section CSS*/
-.services {
-    background: #141414;
+/* Expo Section CSS*/
+.expo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -301,9 +200,9 @@ body {
 
 }
 
-.services h1 {
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b1a25b 100%);
+.expo h1 {
+    background-color: black;
+    background-image: white; /* I was originally going to use a gradient here but decided against it */
     background-size: 100%;
     margin-bottom: 5rem;
     font-size: 2.5rem;
@@ -315,40 +214,910 @@ body {
     margin: 35px;
 }
 
-.services__container {
+.expo__container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.services__card {
+.expo__card {
     margin: 1rem;
     height: 525px;
     width: 400px;
     border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/pic1.svg');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/metal-gears.jpg');
     background-size: cover;
     position: relative;
     color: #fff;
 }
 
-.services__card:nth-child(2) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/pic1.svg');
+.expo__card:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/source-code.jpg');
 }
 
-.services h2 {
+.expo__card h2 {
     position: absolute;
     top: 350px;
     left: 30px;
 }
 
-.services__card p {
+.expo__card p {
     position: absolute;
     top: 400px;
     left: 30px;
 }
 
-.services__card button {
+.expo__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #249EA0;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.expo__card:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/*Spectroscope Lesson Code */
+
+.spectroscope {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600vh;
+
+}
+
+.spectroscope h1 {
+    background-color: black;
+    background-image: black;
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin: 35px;
+}
+
+.spectroscope__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.spectroscope__card {
+    margin: 1rem;
+    height: 525px;
+    width: 375px;
+    border-radius: 4px;
+    background: white;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+.spectroscope__card:nth-child(2) {
+    background-image: url('./images/spec-1.png');
+    height: 525px;
+    width: 750px;
+}
+
+.spectroscope__card h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.spectroscope__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.spectroscope__card:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.spectroscope__container__2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.spectroscope__card__2 {
+    margin: 1rem;
+    height: 525px;
+    width: 375px;
+    border-radius: 4px;
+    background: white;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+.spectroscope__card__2:nth-child(2) {
+    background-image: url('./images/spec-2.png');
+    height: 525px;
+    width: 750px;
+}
+
+.spectroscope__card__2 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.spectroscope__card__2 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.spectroscope__card__2:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.spectroscope__container__3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.spectroscope__card__3 {
+    margin: 1rem;
+    height: 525px;
+    width: 375px;
+    border-radius: 4px;
+    background: white;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+.spectroscope__card__3:nth-child(2) {
+    background-image: url('./images/spec-3.png');
+    height: 525px;
+    width: 750px;
+}
+
+.spectroscope__card__3 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.spectroscope__card__3 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.spectroscope__card__3:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.spectroscope__container__4 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.spectroscope__card__4 {
+    margin: 1rem;
+    height: 525px;
+    width: 375px;
+    border-radius: 4px;
+    background: white;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+.spectroscope__card__4:nth-child(2) {
+    background-image: url('./images/spec-4.png');
+    height: 525px;
+    width: 750px;
+}
+
+.spectroscope__card__4 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.spectroscope__card__4 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.spectroscope__card__4:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.spectroscope__container__discussion {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.spectroscope__card__discussion {
+    margin: 1rem;
+    height: 600px;
+    width: 600px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/light.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.spectroscope__card__discussion:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/white.jpg');
+    color: black;
+}
+
+.spectroscope__card__discussion:nth-child(3) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/rainbow.jpg');
+    color: white;
+}
+
+.spectroscope__card__discussion:nth-child(4) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/spec-4.png');
+    color: white;
+}
+
+.spectroscope__card__discussion:nth-child(5) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/cd.jpg');
+    color: white;
+}
+
+.spectroscope__card__discussion h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.spectroscope__card__discussion p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.spectroscope__card__discussion:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.spectroscope__container__materials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.spectroscope__card__materials {
+    margin: 1rem;
+    height: 525px;
+    width: 375px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/materials.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.spectroscope__card__materials h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.spectroscope__card__materials p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.spectroscope__card__materials:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Engineering Page CSS */
+.eng__page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.eng__page h1 {
+    background-color: black;
+    background-image: white;
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin: 35px;
+}
+
+.eng__page__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.eng__page__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/spec-5.png');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.eng__page__card:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/kal-4.png');
+}
+
+.eng__page h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.eng__page__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.eng__page__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #249EA0;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.eng__page__card:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Kaleidoscope Page CSS */
+.kaleidoscope {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600vh;
+
+}
+
+.kaleidoscope h1 {
+    background-color: black;
+    background-image: black;
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin: 35px;
+}
+
+.kaleidoscope__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.kaleidoscope__card {
+    margin: 1rem;
+    height: 525px;
+    width: 375px;
+    border-radius: 4px;
+    background: white;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+.kaleidoscope__card:nth-child(2) {
+    background-image: url('./images/kal-1.png');
+    height: 525px;
+    width: 750px;
+}
+
+.kaleidoscope__card h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.kaleidoscope__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.kaleidoscope__card:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.kaleidoscope__container__2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.kaleidoscope__card__2 {
+    margin: 1rem;
+    height: 525px;
+    width: 375px;
+    border-radius: 4px;
+    background: white;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+.kaleidoscope__card__2:nth-child(2) {
+    background-image: url('./images/kal-2.png');
+    height: 525px;
+    width: 750px;
+}
+
+.kaleidoscope__card__2 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.kaleidoscope__card__2 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.kaleidoscope__card__2:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.kaleidoscope__container__3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.kaleidoscope__card__3 {
+    margin: 1rem;
+    height: 525px;
+    width: 375px;
+    border-radius: 4px;
+    background: white;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+.kaleidoscope__card__3:nth-child(2) {
+    background-image: url('./images/kal-3.png');
+    height: 525px;
+    width: 750px;
+}
+
+.kaleidoscope__card__3 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.kaleidoscope__card__3 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.kaleidoscope__card__3:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.kaleidoscope__container__discussion {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.kaleidoscope__card__discussion {
+    margin: 1rem;
+    height: 600px;
+    width: 600px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/light.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.kaleidoscope__card__discussion:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/light-ray.jpg');
+    color: white;
+}
+
+.kaleidoscope__card__discussion:nth-child(3) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/kids-kaleidoscope.jpg');
+    color: white;
+}
+
+.kaleidoscope__card__discussion:nth-child(4) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/kal-pattern.jpg');
+    color: white;
+}
+
+.kaleidoscope__card__discussion:nth-child(5) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/kal-pattern-2.jpg');
+    color: white;
+}
+
+.kaleidoscope__card__discussion h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.kaleidoscope__card__discussion p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.kaleidoscope__card__discussion:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Binary Bracelets CSS */
+
+.binary-bracelets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450vh;
+}
+
+.binary-bracelets h1 {
+    background-color: black;
+    background-image: black;
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin: 35px;
+}
+
+.binary-bracelets-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.binary-bracelets-card {
+    margin: 1rem;
+    height: 525px;
+    width: 375px;
+    border-radius: 4px;
+    background: white;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+.binary-bracelets-card:nth-child(2) {
+    background-image: url('./images/string.jpg');
+    height: 525px;
+    width: 750px;
+}
+
+.binary-bracelets-card h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.binary-bracelets-card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.binary-bracelets-card:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.binary-bracelets-container-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.binary-bracelets-card-2 {
+    margin: 1rem;
+    height: 525px;
+    width: 375px;
+    border-radius: 4px;
+    background: white;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+.binary-bracelets-card-2:nth-child(2) {
+    background-image: url('./images/binary-decoder.png');
+    height: 525px;
+    width: 750px;
+}
+
+.binary-bracelets-card-2 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.binary-bracelets-card-2 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.binary-bracelets-card-2:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.binary-bracelets-container-3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.binary-bracelets-card-3 {
+    margin: 1rem;
+    height: 525px;
+    width: 375px;
+    border-radius: 4px;
+    background: white;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+.binary-bracelets-card-3:nth-child(2) {
+    background-image: url('./images/beads.jpg');
+    height: 525px;
+    width: 750px;
+}
+
+.binary-bracelets-card-3 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.binary-bracelets-card-3 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.binary-bracelets-card-3:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.binary-bracelets-container-4 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.binary-bracelets-card-4 {
+    margin: 1rem;
+    height: 525px;
+    width: 375px;
+    border-radius: 4px;
+    background: white;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+
+.binary-bracelets-card-4:nth-child(2) {
+    background-image: url('./images/bracelet.jpg');
+    height: 525px;
+    width: 750px;
+}
+
+.binary-bracelets-card-4 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.binary-bracelets-card-4 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.binary-bracelets-card-4:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.binary-bracelets-container-discussion {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.binary-bracelets-card-discussion {
+    margin: 1rem;
+    height: 600px;
+    width: 600px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/binary-pattern.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.binary-bracelets-card-discussion:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/laptop.jpg');
+    color: white;
+}
+
+.binary-bracelets-card-discussion:nth-child(3) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/circuits.jpg');
+    color: white;
+}
+
+.binary-bracelets-card-discussion:nth-child(4) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/binary-laptop.jpg');
+    color: white;
+}
+
+.binary-bracelets-card-discussion h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.binary-bracelets-card-discussion p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.binary-bracelets-card-discussion:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/*Computer Science Page CSS */
+.comp__sci__page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.comp__sci__page h1 {
+    background-color: black;
+    background-image: white;
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin: 35px;
+}
+
+.comp__sci__page__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.comp__sci__page__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/binary-pattern.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.comp__sci__page h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.comp__sci__page__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.comp__sci__page__card button {
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -360,501 +1129,68 @@ body {
     left: 30px;
     font-size: 1rem;
     cursor: pointer;
+    text-decoration: none !important;
 }
 
-.services__card:hover {
+.comp__sci__page__card:hover {
     transform: scale(1.075);
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
-    .services {
-        height: 1600px;
-
-    }
-
-    .services h1 {
-        font-size: 2rem;
-        margin-top: 12rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .services {
-        height: 1400px;
-    }
-
-    .services h1 {
-        font-size: 1.2rem;
-    }
-
-    .services__card {
-        width: 300px;
-    }
-}
-
-
-
-
-
-
-
-/*Spectroscope Lesson Code */
-
-.spectroscope {
-    background: #141414;
+/* What is Gears & Gadgets/About Us CSS */
+.about-us-page {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-us-page-card-1 {
+    margin: 1rem;
+    height: auto;
+    width: auto;
+    border-radius: 4px;
+    background: #249EA0;
+    background-size: cover;
+    position: relative;
+    color: black;
+    padding: 10px 10px;
     align-items: center;
-    height: 600vh;
-
 }
 
-.spectroscope h1 {
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b1a25b 100%);
-    background-size: 100%;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    margin: 35px;
-}
 
-.spectroscope-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.spectroscope-card {
-    margin: 1rem;
-    height: 525px;
-    width: 375px;
+.about-us-page-card-2 {
+    margin: 0.5rem;
+    height: auto;
+    width: auto;
     border-radius: 4px;
-    background: #141414;
+    background: #249EA0;
     background-size: cover;
     position: relative;
-    color: #fff;
+    color: black;
+    padding: 10px 10px;
+    align-items: center;
 }
 
-.spectroscope-card:nth-child(2) {
-    background-image: url('./images/spec-1.png');
-    height: 525px;
-    width: 750px;
-}
-
-.spectroscope-card h2 {
-    position: absolute;
-    top: 350px;
-    left: 30px;
-}
-
-.spectroscope-card p {
-    position: absolute;
-    top: 400px;
-    left: 30px;
-}
-
-.spectroscope-card:hover {
-    transform: scale(1.075);
+.about-us-page-card-2:hover {
+    transform: scale(1.01);
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
-    .spectroscope {
-        height: 1600px;
-
-    }
-
-    .spectroscope h1 {
-        font-size: 2rem;
-        margin-top: 12rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .spectroscope {
-        height: 1400px;
-    }
-
-    .spectroscope h1 {
-        font-size: 1.2rem;
-    }
-
-    .spectroscope {
-        width: 300px;
-    }
-}
-
-
-.spectroscope-container-2 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.spectroscope-card-2 {
+.about-us-page-card-3 {
     margin: 1rem;
     height: 525px;
-    width: 375px;
+    width: 400px;
     border-radius: 4px;
-    background: #141414;
+    background-image: url('./images/gg-promo.jpg');
     background-size: cover;
     position: relative;
-    color: #fff;
-}
-
-.spectroscope-card-2:nth-child(2) {
-    background-image: url('./images/spec-2.png');
-    height: 525px;
-    width: 750px;
-}
-
-.spectroscope-card-2 h2 {
-    position: absolute;
-    top: 350px;
-    left: 30px;
-}
-
-.spectroscope-card-2 p {
-    position: absolute;
-    top: 400px;
-    left: 30px;
-}
-
-.spectroscope-card-2:hover {
-    transform: scale(1.075);
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-
-.spectroscope-container-3 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.spectroscope-card-3 {
-    margin: 1rem;
-    height: 525px;
-    width: 375px;
-    border-radius: 4px;
-    background: #141414;
-    background-size: cover;
-    position: relative;
-    color: #fff;
-}
-
-.spectroscope-card-3:nth-child(2) {
-    background-image: url('./images/spec-3.png');
-    height: 525px;
-    width: 750px;
-}
-
-.spectroscope-card-3 h2 {
-    position: absolute;
-    top: 350px;
-    left: 30px;
-}
-
-.spectroscope-card-3 p {
-    position: absolute;
-    top: 400px;
-    left: 30px;
-}
-
-.spectroscope-card-3:hover {
-    transform: scale(1.075);
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.spectroscope-container-4 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.spectroscope-card-4 {
-    margin: 1rem;
-    height: 525px;
-    width: 375px;
-    border-radius: 4px;
-    background: #141414;
-    background-size: cover;
-    position: relative;
-    color: #fff;
-}
-
-.spectroscope-card-4:nth-child(2) {
-    background-image: url('./images/spec-4.png');
-    height: 525px;
-    width: 750px;
-}
-
-.spectroscope-card-4 h2 {
-    position: absolute;
-    top: 350px;
-    left: 30px;
-}
-
-.spectroscope-card-4 p {
-    position: absolute;
-    top: 400px;
-    left: 30px;
-}
-
-.spectroscope-card-4:hover {
-    transform: scale(1.075);
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-
-
-.spectroscope-container-discussion {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.spectroscope-card-discussion {
-    margin: 1rem;
-    height: 525px;
-    width: 500px;
-    border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/light.jpg');
-    background-size: cover;
-    position: relative;
-    color: #fff;
-}
-
-.spectroscope-card-discussion:nth-child(2) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/white.jpg');
     color: black;
 }
 
-.spectroscope-card-discussion:nth-child(3) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/rainbow.jpg');
-    color: white;
-}
-
-.spectroscope-card-discussion:nth-child(4) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/spec-4.png');
-    color: white;
-}
-
-.spectroscope-card-discussion:nth-child(5) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/cd.jpg');
-    color: white;
-}
-
-.spectroscope-card-discussion h2 {
-    position: absolute;
-    top: 350px;
-    left: 30px;
-}
-
-.spectroscope-card-discussion p {
-    position: absolute;
-    top: 400px;
-    left: 30px;
-}
-
-.spectroscope-card-discussion:hover {
+.about-us-page-card-3:hover {
     transform: scale(1.075);
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
-
-
-.spectroscope-container-materials {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.spectroscope-card-materials {
-    margin: 1rem;
-    height: 525px;
-    width: 375px;
-    border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/materials.jpg');
-    background-size: cover;
-    position: relative;
-    color: #fff;
-}
-
-.spectroscope-card-materials h2 {
-    position: absolute;
-    top: 350px;
-    left: 30px;
-}
-
-.spectroscope-card-materials p {
-    position: absolute;
-    top: 400px;
-    left: 30px;
-}
-
-.spectroscope-card-materials:hover {
-    transform: scale(1.075);
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-/* Hero CSS 
-
-.main {
-    background-color: #141414;
-}
-
-.main__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-self: self;
-    margin: 90vh;
-    background-color: #141414;
-    z-index: 1;
-    width:100%;
-    max-width: 1300px;
-    padding: 0 50px;
-}
-
-.main__content .main-hero-text {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, ##ff0844, 0% #ffb1 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.main__content h2 {
-    font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.main__content p {
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.main__btn {
-    font-size: 1rem;
-    background-color: linear-gradient(to top, #f77062 0%, #fe9166 100%);
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.3s;
-    outline: none;
-}
-
-.main__btn a {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    text-decoration: none;
-}
-
-.main__btn:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #4837ff;
-    transition: all 0.3s;
-    border-radius: 4px;
-}
-
-.main__btn:hover:after{
-    width: 100%;
-}
-
-.main__img--container {
-    text-align: center;
-}
-
-#main__img {
-    height: 80%;
-    width: 80%;
-}
-
-/* Hero Mobile Responsive 
-
-@media screen and (max-width: 800px) {
-    .main__container {
-        display: grid;
-        grid-template-columns: auto;
-        align-items: center;
-        justify-self: center;
-        width: 100%;
-        margin: 0 auto;
-        height: 90vh;
-    }
-
-    .main__content {
-        text-align: center;
-        margin-bottom: 4rem;
-    }
-
-    main__content h1 {
-        font-size: 2.5rem;
-        margin-top: 2rem;
-    }
-
-    main__content h2 {
-        font-size: 3rem;
-    }
-
-    .main__content p {
-        margin-top: 1rem;
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    main__content h1 {
-        font-size: 2rem;
-        margin-top: 3rem;
-    }
-
-    main__content h2 {
-        font-size: 2rem;
-    }
-
-    .main__content p {
-        margin-top: 2rem;
-        font-size: 1.5rem;
-    }
-
-    .main__btn {
-        padding: 12px 36px;
-        margin: 2.5rem;
-    }
-} */
